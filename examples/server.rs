@@ -185,7 +185,13 @@ where
         }
     };
 
-    let resp = http::Response::builder().status(status).body(()).unwrap();
+    let mut resp_builder = http::Response::builder();
+    if req.uri().path().ends_with(".js") {
+        resp_builder = resp_builder.header(
+            http::header::CONTENT_TYPE,
+            http::HeaderValue::from_static("text/javascript; charset=UTF-8"));
+    }
+    let resp: http::Response<()> = resp_builder.status(status).body(()).unwrap();
 
     match stream.send_response(resp).await {
         Ok(_) => {
