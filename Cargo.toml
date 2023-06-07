@@ -3,4 +3,7 @@
 members = [
     "rwt",
     "rwt_cli",
+
+    # Internal
+    "examples",
 ]
