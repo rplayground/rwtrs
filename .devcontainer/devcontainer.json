@@ -1,11 +1,10 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/rust
 {
-	"name": "Rust",
+	"name": "rwtrs",
 	"build": {
 		"dockerfile": "../Dockerfile",
 		"context": ".."
 	},
+
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
 			"version": "latest",
@@ -13,7 +12,6 @@
 		}
 	},
 
-	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	"mounts": [
 		{
 			"source": "devcontainer-cargo-cache-${devcontainerId}",
@@ -22,10 +20,8 @@
 		}
 	],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "rustc --version",
 
-	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
