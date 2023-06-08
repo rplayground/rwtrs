@@ -1,8 +1,8 @@
 [workspace]
 
 members = [
-    "rwt",
-    "rwt_cli",
+    "rwtrs",
+    "rwtrs_cli",
 
     # Internal
     "examples",

@@ -1,7 +1,7 @@
-use rwt;
+use rwtrs;
 
 fn main() {
     println!("Hello, world!");
-    let result = rwt::add(2, 2);
+    let result = rwtrs::add(2, 2);
     println!("{}", result);
 }
