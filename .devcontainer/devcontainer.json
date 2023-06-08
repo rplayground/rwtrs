@@ -22,6 +22,9 @@
 		}
 	],
 
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "rustc --version",
+
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
