@@ -11,5 +11,21 @@
 			"version": "latest",
 			"profile": "complete"
 		}
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-labs",
+				"GitHub.copilot-chat",
+				"rust-lang.rust-analyzer",
+				"tamasfe.even-better-toml",
+				"eamodio.gitlens",
+				"serayuzgur.crates",
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
 	}
 }
