@@ -8,9 +8,9 @@ edition = "2018"
 anyhow = "1.0"
 bytes = "1"
 futures = "0.3"
-h3 = { git = "https://github.com/security-union/h3.git", branch = "add-webtransport" }
-h3-quinn = { git = "https://github.com/security-union/h3.git", branch = "add-webtransport" }
-h3-webtransport = { git = "https://github.com/security-union/h3.git", branch = "add-webtransport" }
+h3 = { git = "https://github.com/hyperium/h3.git", rev = "3ef7c1a3"}
+h3-quinn = { git = "https://github.com/hyperium/h3.git", rev = "3ef7c1a3"}
+h3-webtransport = { git = "https://github.com/hyperium/h3.git", rev = "3ef7c1a3"}
 http = "0.2"
 quinn = { version = "0.10", default-features = false, features = [
     "runtime-tokio",
